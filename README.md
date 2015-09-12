@@ -9,7 +9,7 @@ $ npm i --save dhparam
 ```js
 var dhparam = require("dhparam");
 
-var dh = dhparam(1024);
+var dh = dhparam(2048);
 console.log(dh);
 //=> -----BEGIN DH PARAMETERS-----
 //=> MIIBBwKCAQDRTTrIcnoH8L/YbVA21qpr66V+JXKGL14XiXqmtNkXdQc/QSKAfG3R
@@ -22,6 +22,8 @@ console.log(dh);
 ```
 ## API
 ### dhparam(bits);
-- `bits` *number*: modulus size for the prime. default: 1024
+- `bits` *number*: key size for the prime. default: 1024
+
+*Note that generating 2048 bits and above will take considerable time*
 
 © 2014-2015 [silverwind](https://github.com/silverwind), distributed under BSD licence
