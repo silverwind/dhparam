@@ -1,0 +1,36 @@
+{
+  "name": "dhparam",
+  "description": "Generate PEM-encoded Diffie-Hellman parameters directly from within node",
+  "version": "0.1.0",
+  "author": "silverwind <me@silverwind.io>",
+  "repository": "silverwind/dhparam",
+  "license": "BSD-2-Clause",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.5.0",
+    "grunt-shell": "^1.1.2"
+  },
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": "^0.10.0"
+  },
+  "keywords": [
+    "dhparam",
+    "dhparams",
+    "dhparameters",
+    "pfs",
+    "perfect forward secrecy",
+    "pem",
+    "tls",
+    "diffie-hellman",
+    "standalone"
+  ],
+  "dependencies": {
+    "asn1.js": "^2.2.0"
+  }
+}
