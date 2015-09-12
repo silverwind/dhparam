@@ -8,9 +8,7 @@ $ npm i --save dhparam
 ### Use
 ```js
 var dhparam = require("dhparam");
-
-var dh = dhparam(2048);
-console.log(dh);
+console.log(dhparam());
 //=> -----BEGIN DH PARAMETERS-----
 //=> MIIBBwKCAQDRTTrIcnoH8L/YbVA21qpr66V+JXKGL14XiXqmtNkXdQc/QSKAfG3R
 //=> jZm+lBX36muujGbiE5n6d524nFY5wRB0O69Ec29ChPQkWXg/Aa9Tw0iguBODMWH7
@@ -21,8 +19,8 @@ console.log(dh);
 //=> -----END DH PARAMETERS-----
 ```
 ## API
-### dhparam(bits);
-- `bits` *number*: key size for the prime. default: 1024
+### dhparam(bits)
+- `bits` *number*: Key size for the prime. default: 2048
 
 *Note that generating 2048 bits and above will take considerable time*
 

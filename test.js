@@ -13,7 +13,7 @@ assert.equal(dh.length, 155);
 assert.ok(/^-----BEGIN DH PARAMETERS-----/.test(dh));
 assert.ok(/-----END DH PARAMETERS-----$/.test(dh));
 
-dh = dhparam();
+dh = dhparam(1024);
 assert.equal(dh.length, 244);
 assert.ok(/^-----BEGIN DH PARAMETERS-----/.test(dh));
 assert.ok(/-----END DH PARAMETERS-----$/.test(dh));
