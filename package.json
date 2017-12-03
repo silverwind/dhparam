@@ -1,7 +1,7 @@
 {
   "name": "dhparam",
   "description": "Generate PEM-encoded Diffie-Hellman parameters directly from within node",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "silverwind <me@silverwind.io>",
   "repository": "silverwind/dhparam",
   "license": "BSD-2-Clause",
