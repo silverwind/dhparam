@@ -6,7 +6,7 @@
   "repository": "silverwind/dhparam",
   "license": "BSD-2-Clause",
   "scripts": {
-    "test": "node test.js"
+    "test": "make test"
   },
   "files": [
     "index.js"
@@ -27,5 +27,9 @@
   ],
   "dependencies": {
     "asn1.js": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "updates": "^1.2.6"
   }
 }

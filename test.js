@@ -1,9 +1,9 @@
 "use strict";
 
-var assert = require("assert");
-var dhparam = require("./");
+const assert = require("assert");
+const dhparam = require("./");
 
-var dh = dhparam(256);
+let dh = dhparam(256);
 assert.equal(dh.length, 110);
 assert.ok(/^-----BEGIN DH PARAMETERS-----/.test(dh));
 assert.ok(/-----END DH PARAMETERS-----$/.test(dh));
