@@ -1,18 +1,18 @@
-lint:
-	node_modules/.bin/eslint --color --quiet *.js
-	node --trace-warnings --trace-deprecation test.js
+BIN:=node_modules/.bin
 
 test:
-	$(MAKE) lint
+	$(BIN)/eslint *.js
+	node --trace-deprecation --throw-deprecation --trace-warnings test.js
 
 publish:
-	git push -u --tags origin master
+	if git ls-remote --exit-code origin &>/dev/null; then git push -u -f --tags origin master; fi
+	if git ls-remote --exit-code git &>/dev/null; then git push -u -f --tags git master; fi
 	npm publish
 
 update:
-	node_modules/.bin/updates -u
+	$(BIN)/updates -u
 	rm -rf node_modules
-	npm install
+	yarn --no-lockfile
 
 npm-patch:
 	npm version patch

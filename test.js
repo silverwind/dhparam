@@ -1,7 +1,7 @@
 "use strict";
 
 const assert = require("assert");
-const dhparam = require("./");
+const dhparam = require(".");
 
 let dh = dhparam(256);
 assert.equal(dh.length, 110);
